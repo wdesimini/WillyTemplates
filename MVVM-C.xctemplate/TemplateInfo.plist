@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.willyMVVMC</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>MVVM-C module template.</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Module Name</string>
+			<key>Description</key>
+			<string>The name of the module to create</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>Module</string>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>___FILEBASENAME___/___FILEBASENAME___Contract.swift</string>
+		<string>___FILEBASENAME___/___FILEBASENAME___Coordinator.swift</string>
+		<string>___FILEBASENAME___/___FILEBASENAME___Model.swift</string>
+		<string>___FILEBASENAME___/___FILEBASENAME___ViewModel.swift</string>
+		<string>___FILEBASENAME___/___FILEBASENAME___ViewController.swift</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Group</key>
+		<array>
+			<string>___FILEBASENAME___</string>
+		</array>
+		<key>___FILEBASENAME___/___FILEBASENAME___Contract.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>___FILEBASENAME___</string>
+			</array>
+			<key>Path</key>
+			<string>___FILEBASENAME___/___FILEBASENAME___Contract.swift</string>
+		</dict>
+		<key>___FILEBASENAME___/___FILEBASENAME___Coordinator.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>___FILEBASENAME___</string>
+			</array>
+			<key>Path</key>
+			<string>___FILEBASENAME___/___FILEBASENAME___Coordinator.swift</string>
+		</dict>
+		<key>___FILEBASENAME___/___FILEBASENAME___Model.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>___FILEBASENAME___</string>
+			</array>
+			<key>Path</key>
+			<string>___FILEBASENAME___/___FILEBASENAME___Model.swift</string>
+		</dict>
+		<key>___FILEBASENAME___/___FILEBASENAME___ViewModel.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>___FILEBASENAME___</string>
+			</array>
+			<key>Path</key>
+			<string>___FILEBASENAME___/___FILEBASENAME___ViewModel.swift</string>
+		</dict>
+		<key>___FILEBASENAME___/___FILEBASENAME___ViewController.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>___FILEBASENAME___</string>
+			</array>
+			<key>Path</key>
+			<string>___FILEBASENAME___/___FILEBASENAME___ViewController.swift</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
