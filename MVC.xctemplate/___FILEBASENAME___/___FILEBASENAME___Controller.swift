@@ -15,6 +15,17 @@ class ___FILEBASENAMEASIDENTIFIER___ {
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ControllerInput {
     func load___VARIABLE_productName___() {
     }
+    
+    func start___VARIABLE_productName___() -> ___VARIABLE_productName___ViewInput {
+        let model = ___VARIABLE_productName___Model()
+        let controller = self
+        let view = ___VARIABLE_productName___View()
+        model.output = controller
+        controller.model = model
+        controller.output = view
+        view.controller = controller
+        return view
+    }
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ModelOutput {

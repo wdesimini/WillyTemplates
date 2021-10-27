@@ -13,6 +13,7 @@ protocol ___VARIABLE_productName___ModelOutput: AnyObject {
 
 protocol ___VARIABLE_productName___ControllerInput: AnyObject {
     func load___VARIABLE_productName___()
+    func start___VARIABLE_productName___() -> ___VARIABLE_productName___ViewInput
 }
 
 protocol ___VARIABLE_productName___ControllerOutput: AnyObject {
