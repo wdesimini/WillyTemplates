@@ -24,8 +24,6 @@ class ___FILEBASENAMEASIDENTIFIER___ {
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ControllerInput {
-    func load___VARIABLE_productName___() {
-    }
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ModelOutput {

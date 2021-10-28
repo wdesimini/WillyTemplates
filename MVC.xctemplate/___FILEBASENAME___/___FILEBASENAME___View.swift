@@ -15,11 +15,6 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         add___VARIABLE_productName___Views()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        controller.load___VARIABLE_productName___()
-    }
-    
     private func add___VARIABLE_productName___Views() {
     }
 }

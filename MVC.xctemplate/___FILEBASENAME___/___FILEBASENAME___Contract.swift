@@ -12,7 +12,6 @@ protocol ___VARIABLE_productName___ModelOutput: AnyObject {
 }
 
 protocol ___VARIABLE_productName___ControllerInput: AnyObject {
-    func load___VARIABLE_productName___()
 }
 
 protocol ___VARIABLE_productName___ControllerOutput: AnyObject {
