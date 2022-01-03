@@ -13,7 +13,7 @@ class ___FILEBASENAMEASIDENTIFIER___ {
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___CoordinatorInput {
-    func start___VARIABLE_productName___() {
+    func start___VARIABLE_productName___() -> ___VARIABLE_productName___ViewInput {
         let model = ___VARIABLE_productName___Model()
         let viewModel = ___VARIABLE_productName___ViewModel()
         let view = ___VARIABLE_productName___ViewController()
@@ -24,5 +24,6 @@ extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___CoordinatorI
         viewModel.output = view
         self.viewModel = viewModel
         self.view = view
+        return view
     }
 }
