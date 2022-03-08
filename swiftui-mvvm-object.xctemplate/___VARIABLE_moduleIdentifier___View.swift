@@ -13,7 +13,8 @@ struct ___VARIABLE_moduleIdentifier___View: View {
 struct ___VARIABLE_moduleIdentifier___View_Previews: PreviewProvider {
     static var previews: some View {
         let data = PreviewDataManager.preview
-        let viewModel = ___VARIABLE_moduleIdentifier___View.ViewModel(data: data)
+        let ___VARIABLE_objectIdentifier___Id = data.___VARIABLE_objectIdentifier___Service.objectsById.keys.first!
+        let viewModel = ___VARIABLE_moduleIdentifier___View.ViewModel(data: data, ___VARIABLE_objectIdentifier___Id: ___VARIABLE_objectIdentifier___Id)
         return ___VARIABLE_moduleIdentifier___View(viewModel: viewModel)
     }
 }
