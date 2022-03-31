@@ -8,11 +8,7 @@
 import Combine
 import SwiftUI
 
-protocol ___VARIABLE_moduleIdentifier___ViewModelInput: ObservableObject {
-    // handle inputs from view and coordinator
-}
-
-class ___VARIABLE_moduleIdentifier___ViewModel: ___VARIABLE_moduleIdentifier___ViewModelInput {
+class ___VARIABLE_moduleIdentifier___ViewModel: ObservableObject {
     private var cancellables: Set<AnyCancellable>
     weak var coordinator: ___VARIABLE_moduleIdentifier___CoordinatorInput?
     

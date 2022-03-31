@@ -8,8 +8,8 @@
 import Combine
 import SwiftUI
 
+/// handle inputs from view-model
 protocol ___VARIABLE_moduleIdentifier___CoordinatorInput: AnyObject {
-    // handle inputs from view-model
 }
 
 class ___VARIABLE_moduleIdentifier___Coordinator:
