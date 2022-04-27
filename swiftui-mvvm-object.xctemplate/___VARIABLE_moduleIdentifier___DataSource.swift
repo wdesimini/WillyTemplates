@@ -10,4 +10,7 @@ protocol ___VARIABLE_moduleIdentifier___DataSource {
 }
 
 extension DataManager: ___VARIABLE_moduleIdentifier___DataSource {
+    var ___VARIABLE_objectIdentifier___DataService: DataService<___VARIABLE_moduleIdentifier___> {
+        typedDataService()
+    }
 }

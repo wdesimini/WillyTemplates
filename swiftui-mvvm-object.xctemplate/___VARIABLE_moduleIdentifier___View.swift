@@ -17,9 +17,7 @@ struct ___VARIABLE_moduleIdentifier___View_Previews: PreviewProvider {
     
     private static var previewsViewModel: ___VARIABLE_moduleIdentifier___ViewModel {
         let data = PreviewDataManager.preview
-        let ___VARIABLE_objectIdentifier___Id = data.___VARIABLE_objectIdentifier___Service.objectsById.keys.first!
-        return ___VARIABLE_moduleIdentifier___ViewModel(
-            ___VARIABLE_objectIdentifier___DataSource: data,
-            ___VARIABLE_objectIdentifier___Id: ___VARIABLE_objectIdentifier___Id)
+        let ___VARIABLE_objectIdentifier___Id = data.___VARIABLE_objectIdentifier___Service.previewObjectId
+        return ___VARIABLE_moduleIdentifier___ViewModel(___VARIABLE_objectIdentifier___DataSource: data, ___VARIABLE_objectIdentifier___Id: ___VARIABLE_objectIdentifier___Id)
     }
 }
