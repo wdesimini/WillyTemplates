@@ -9,6 +9,9 @@ import Combine
 import SwiftUI
 
 class ___VARIABLE_moduleIdentifier___ViewModel: ObservableObject {
-    init(data: DataManager) {
+    private let dataSource: ___VARIABLE_moduleIdentifier___DataSource
+    
+    init(dataSource: ___VARIABLE_moduleIdentifier___DataSource) {
+        self.dataSource = dataSource
     }
 }
