@@ -12,8 +12,11 @@ struct ___VARIABLE_moduleIdentifier___View: View {
 
 struct ___VARIABLE_moduleIdentifier___View_Previews: PreviewProvider {
     static var previews: some View {
+        ___VARIABLE_moduleIdentifier___View(viewModel: previewsViewModel)
+    }
+    
+    private static var previewsViewModel: ___VARIABLE_moduleIdentifier___ViewModel {
         let data = PreviewDataManager.preview
-        let viewModel = ___VARIABLE_moduleIdentifier___View.ViewModel(data: data)
-        return ___VARIABLE_moduleIdentifier___View(viewModel: viewModel)
+        return ___VARIABLE_moduleIdentifier___ViewModel(data: data)
     }
 }

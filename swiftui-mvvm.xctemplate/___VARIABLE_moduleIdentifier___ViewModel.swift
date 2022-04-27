@@ -8,9 +8,7 @@
 import Combine
 import SwiftUI
 
-extension ___VARIABLE_moduleIdentifier___View {
-    class ViewModel: ObservableObject {
-        init(data: DataManager) {
-        }
+class ___VARIABLE_moduleIdentifier___ViewModel: ObservableObject {
+    init(data: DataManager) {
     }
 }
