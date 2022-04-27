@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct ___VARIABLE_moduleIdentifier___View: View {
-    @ObservedObject var viewModel: ViewModel
+    @ObservedObject var viewModel: ___VARIABLE_moduleIdentifier___ViewModel
     
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
