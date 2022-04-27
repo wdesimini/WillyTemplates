@@ -17,6 +17,6 @@ struct ___VARIABLE_moduleIdentifier___View_Previews: PreviewProvider {
     
     private static var previewsViewModel: ___VARIABLE_moduleIdentifier___ViewModel {
         let data = PreviewDataManager.preview
-        return ___VARIABLE_moduleIdentifier___ViewModel(data: data)
+        return ___VARIABLE_moduleIdentifier___ViewModel(dataSource: data)
     }
 }
