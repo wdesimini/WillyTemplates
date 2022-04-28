@@ -9,16 +9,16 @@ import Combine
 import SwiftUI
 
 protocol ___VARIABLE_moduleIdentifier___EntryViewModelDelegate {
-    func ___VARIABLE_objectIdentifier___EntryDidSubmit___VARIABLE_moduleIdentifier___()
+    func resign___VARIABLE_objectIdentifier___Entry()
 }
 
 class ___VARIABLE_moduleIdentifier___EntryViewModel {
-    private let dataSource: ___VARIABLE_moduleIdentifier___DataSource
+    private let dataSource: ___VARIABLE_moduleIdentifier___EntryDataSource
     unowned private let delegate: ___VARIABLE_moduleIdentifier___EntryViewModelDelegate
     @Published var ___VARIABLE_objectIdentifier___: ___VARIABLE_moduleIdentifier___
     
     init(
-        dataSource: ___VARIABLE_moduleIdentifier___DataSource,
+        dataSource: ___VARIABLE_moduleIdentifier___EntryDataSource,
         delegate: ___VARIABLE_moduleIdentifier___EntryViewModelDelegate,
         ___VARIABLE_objectIdentifier: ___VARIABLE_moduleIdentifier___? = nil
     ) {
@@ -30,11 +30,11 @@ class ___VARIABLE_moduleIdentifier___EntryViewModel {
     }
     
     func cancel___VARIABLE_moduleIdentifier___Entry() {
-        delegate.___VARIABLE_objectIdentifier___EntryDidSubmit___VARIABLE_moduleIdentifier___()
+        delegate.resign___VARIABLE_objectIdentifier___Entry()
     }
     
     func submit___VARIABLE_moduleIdentifier___() {
         dataSource.submit___VARIABLE_moduleIdentifier___(___VARIABLE_objectIdentifier___)
-        delegate.___VARIABLE_objectIdentifier___EntryDidSubmit___VARIABLE_moduleIdentifier___()
+        delegate.resign___VARIABLE_objectIdentifier___Entry()
     }
 }

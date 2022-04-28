@@ -34,6 +34,5 @@ private class ___VARIABLE_moduleIdentifier___EntryViewModelPreviewDelegate: ___V
     )
     
     func ___VARIABLE_objectIdentifier___EntryDidSubmit___VARIABLE_moduleIdentifier___() {
-        
     }
 }
