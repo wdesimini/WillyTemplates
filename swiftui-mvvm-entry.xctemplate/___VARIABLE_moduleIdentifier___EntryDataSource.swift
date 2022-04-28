@@ -14,7 +14,9 @@ protocol ___VARIABLE_moduleIdentifier___EntryDataSource {
 
 extension DataManager: ___VARIABLE_moduleIdentifier___EntryDataSource {
     func empty___VARIABLE_moduleIdentifier___() -> ___VARIABLE_moduleIdentifier___ {
-        ___VARIABLE_moduleIdentifier___(id: .init())
+        ___VARIABLE_moduleIdentifier___(
+            id: .init()
+        )
     }
     
     func submit___VARIABLE_moduleIdentifier___(
