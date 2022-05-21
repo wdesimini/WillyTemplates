@@ -32,6 +32,7 @@ class ___VARIABLE_moduleIdentifier___ViewModel: ObservableObject {
             .sink { welf?.___VARIABLE_objectIdentifier___ = $0 }
             .store(in: &bag)
         ___VARIABLE_objectIdentifier___DataSource
+            .___VARIABLE_objectIdentifier___DataService
             .subscribe(
                 objectId: ___VARIABLE_objectIdentifier___Id,
                 objectSubject: subject)
