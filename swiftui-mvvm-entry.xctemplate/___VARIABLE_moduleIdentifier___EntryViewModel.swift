@@ -27,8 +27,8 @@ class ___VARIABLE_moduleIdentifier___EntryViewModel:
     
     func submit___VARIABLE_moduleIdentifier___() {
         let dataService = dataSource.___VARIABLE_objectIdentifier___DataService
-        isEditing___VARIABLE_moduleIdentifier___
-        ? dataService.update(___VARIABLE_objectIdentifier___)
-        ? dataService.create(___VARIABLE_objectIdentifier___)
+        isEditing___VARIABLE_moduleIdentifier___ ?
+        dataService.update(___VARIABLE_objectIdentifier___) :
+        dataService.create(___VARIABLE_objectIdentifier___)
     }
 }
