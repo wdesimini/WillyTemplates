@@ -5,14 +5,10 @@
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //
 
-import Foundation
-
-class ___VARIABLE_moduleIdentifier___ViewModel: ObservableObject {
+struct ___VARIABLE_moduleIdentifier___ViewModel {
     private let dataSource: ___VARIABLE_moduleIdentifier___DataSource
     
-    init(
-        dataSource: ___VARIABLE_moduleIdentifier___DataSource
-    ) {
+    init(dataSource: ___VARIABLE_moduleIdentifier___DataSource) {
         self.dataSource = dataSource
     }
 }
