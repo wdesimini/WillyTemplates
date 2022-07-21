@@ -1,11 +1,6 @@
-//
-//  ___FILENAME___
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//
+//___FILEHEADER___
 
-struct ___VARIABLE_moduleIdentifier___ViewModel {
+class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
     private let dataSource: ___VARIABLE_moduleIdentifier___DataSource
 
     init(dataSource: ___VARIABLE_moduleIdentifier___DataSource) {

@@ -1,9 +1,9 @@
-// ___FILEHEADER___
+//___FILEHEADER___
 
 import SwiftUI
 
-struct ___VARIABLE_moduleIdentifier___View: View {
-    let viewModel: ___VARIABLE_moduleIdentifier___ViewModel
+struct ___FILEBASENAMEASIDENTIFIER___: View {
+    @ObservedObject var viewModel: ___VARIABLE_moduleIdentifier___ViewModel
 
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
