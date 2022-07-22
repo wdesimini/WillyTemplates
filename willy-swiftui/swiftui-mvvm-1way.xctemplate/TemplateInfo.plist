@@ -24,20 +24,6 @@
 			<key>Default</key>
 			<string>MVVMModule</string>
 		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>objectIdentifier</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>Object:</string>
-			<key>Description</key>
-			<string>The title of ivars inside the module</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>Default</key>
-			<string>module</string>
-		</dict>
 	</array>
 </dict>
 </plist>
