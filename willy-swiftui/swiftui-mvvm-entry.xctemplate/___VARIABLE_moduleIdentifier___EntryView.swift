@@ -1,36 +1,49 @@
-//___FILEHEADER___
+// ___FILEHEADER___
 
 import SwiftUI
 
-struct ___VARIABLE_moduleIdentifier___EntryView: View {
-    @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var viewModel: ___VARIABLE_moduleIdentifier___EntryViewModel
-    
+/**
+ responsible for displaying view based on state
+ */
+
+struct ___FILEBASENAMEASIDENTIFIER___: View {
+
+    // MARK: State
+
+    @StateObject private var viewModel: ___VARIABLE_moduleIdentifier___EntryViewModel
+
+    // MARK: Initialization
+
+    init(viewModel: ___VARIABLE_moduleIdentifier___EntryViewModel) {
+        self._viewModel = .init(wrappedValue: viewModel)
+    }
+
+    // MARK: Body
+
     var body: some View {
         VStack {
-            Button(
-                "Submit",
-                action: submitTapped()
-            )
+            submitButton
         }
-        .padding()
+        .onAppear(perform: viewModel.on___VARIABLE_moduleIdentifier___EntryAppear)
     }
-    
-    
-    private func resign() {
-        presentationMode.wrappedValue.dismiss()
-    }
-    
-    private func submitTapped() {
-        viewModel.submit___VARIABLE_moduleIdentifier___()
-        resign()
+
+    // MARK: Child Views
+
+    private var submitButton: some View {
+        Button("Submit", action: viewModel.submit___VARIABLE_moduleIdentifier___Tapped)
+            .disabled(!viewModel.submitIsEnabled)
     }
 }
 
-struct ___VARIABLE_moduleIdentifier___EntryView_Previews: PreviewProvider {
+// MARK: Preview
+
+struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
     static var previews: some View {
+        ___FILEBASENAMEASIDENTIFIER___(viewModel: viewModel)
+    }
+
+    private static var viewModel: ___VARIABLE_moduleIdentifier___EntryViewModel {
         let dataSource = PreviewDataManager.preview
-        let viewModel = ___VARIABLE_moduleIdentifier___EntryViewModel(dataSource: dataSource)
-        return ___VARIABLE_moduleIdentifier___EntryView(viewModel: viewModel)
+        return .init(dataSource: dataSource)
     }
 }

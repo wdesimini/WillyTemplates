@@ -32,7 +32,7 @@
 			<key>Name</key>
 			<string>Object:</string>
 			<key>Description</key>
-			<string>The title of ivars inside the module</string>
+			<string>The prefix of the entered object</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
