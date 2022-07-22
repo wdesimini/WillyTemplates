@@ -39,7 +39,7 @@ struct ___VARIABLE_moduleIdentifier___View_Previews: PreviewProvider {
         ___FILEBASENAMEASIDENTIFIER___(viewModel: viewModel)
     }
 
-    private static var viewModel: MintSupplierViewModel {
+    private static var viewModel: ___VARIABLE_moduleIdentifier___ViewModel {
         let dataSource = PreviewDataManager.preview
         return .init(dataSource: dataSource)
     }
