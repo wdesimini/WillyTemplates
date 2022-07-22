@@ -1,41 +1,47 @@
-//
-//  ___FILENAME___
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//
+// ___FILEHEADER___
 
 import Combine
-import SwiftUI
 
-class ___VARIABLE_moduleIdentifier___ViewModel: ObservableObject {
-    private let ___VARIABLE_objectIdentifier___DataSource: ___VARIABLE_moduleIdentifier___DataSource
+class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
+
+    // MARK: Data
+
+    private let dataSource: ___VARIABLE_moduleIdentifier___DataSource
     private let ___VARIABLE_objectIdentifier___Id: ___VARIABLE_moduleIdentifier___.ID
-    private var bag: Set<AnyCancellable>
+
+    // MARK: Binding
+
+    private let ___VARIABLE_objectIdentifier___Subject = PassthroughSubject<___VARIABLE_moduleIdentifier___?, Never>()
+    private var bag = Set<AnyCancellable>()
     @Published private var ___VARIABLE_objectIdentifier___: ___VARIABLE_moduleIdentifier___?
-    
+
+    // MARK: Initialization
+
     init(
-        ___VARIABLE_objectIdentifier___DataSource: ___VARIABLE_moduleIdentifier___DataSource,
+        dataSource: ___VARIABLE_moduleIdentifier___DataSource,
         ___VARIABLE_objectIdentifier___Id: ___VARIABLE_moduleIdentifier___.ID
     ) {
-        self.___VARIABLE_objectIdentifier___DataSource = ___VARIABLE_objectIdentifier___DataSource
+        self.dataSource = dataSource
         self.___VARIABLE_objectIdentifier___Id = ___VARIABLE_objectIdentifier___Id
-        self.bag = .init()
-        self.subscribeTo___VARIABLE_moduleIdentifier___Data()
+        self.bind___VARIABLE_moduleIdentifier___()
     }
-    
-    private func subscribeTo___VARIABLE_moduleIdentifier___Data() {
-        weak var welf = self
-        let subject =
-        PassthroughSubject<___VARIABLE_moduleIdentifier___?, Never>()
-        subject
-            .sink { welf?.___VARIABLE_objectIdentifier___ = $0 }
+
+    // MARK: Lifecycle
+
+    private func bind___VARIABLE_moduleIdentifier___() {
+        ___VARIABLE_objectIdentifier___Subject
+            .wassign(to: \.___VARIABLE_objectIdentifier___, on: self)
             .store(in: &bag)
-        ___VARIABLE_objectIdentifier___DataSource
+        dataSource
             .___VARIABLE_objectIdentifier___DataService
             .subscribe(
                 objectId: ___VARIABLE_objectIdentifier___Id,
-                objectSubject: subject)
+                objectSubject: ___VARIABLE_objectIdentifier___Subject)
             .store(in: &bag)
+    }
+
+    // MARK: User Events
+
+    func on___VARIABLE_moduleIdentifier___Appear() {
     }
 }
