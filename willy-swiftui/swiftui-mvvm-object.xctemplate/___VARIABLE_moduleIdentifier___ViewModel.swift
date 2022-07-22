@@ -26,14 +26,22 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
         self.bind___VARIABLE_moduleIdentifier___()
     }
 
+    // MARK: Computed
+
+    /**
+     `var` objects that format values to be consumed directly by the view
+     - isEnableds
+     - isVisibles
+     - child view-models
+     */
+
     // MARK: Lifecycle
 
     private func bind___VARIABLE_moduleIdentifier___() {
         ___VARIABLE_objectIdentifier___Subject
             .wassign(to: \.___VARIABLE_objectIdentifier___, on: self)
             .store(in: &bag)
-        dataSource
-            .___VARIABLE_objectIdentifier___DataService
+        dataSource.___VARIABLE_objectIdentifier___DataService
             .subscribe(
                 objectId: ___VARIABLE_objectIdentifier___Id,
                 objectSubject: ___VARIABLE_objectIdentifier___Subject)

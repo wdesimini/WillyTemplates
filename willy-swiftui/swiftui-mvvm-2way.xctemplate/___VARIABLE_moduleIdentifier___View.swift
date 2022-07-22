@@ -10,7 +10,13 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
 
     // MARK: State
 
-    @StateObject var viewModel: ___VARIABLE_moduleIdentifier___ViewModel
+    @StateObject private var viewModel: ___VARIABLE_moduleIdentifier___ViewModel
+
+    // MARK: Initialization
+
+    init(viewModel: ___VARIABLE_moduleIdentifier___ViewModel) {
+        self._viewModel = .init(wrappedValue: viewModel)
+    }
 
     // MARK: Body
 

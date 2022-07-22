@@ -3,17 +3,32 @@
 import SwiftUI
 
 struct ___FILEBASENAMEASIDENTIFIER___: View {
+
+    // MARK: State
+
     @StateObject private var viewModel: ___VARIABLE_moduleIdentifier___ViewModel
 
+    // MARK: Initialization
+
     init(viewModel: ___VARIABLE_moduleIdentifier___ViewModel) {
-        self.viewModel = viewModel
+        self._viewModel = .init(wrappedValue: viewModel)
     }
+
+    // MARK: Body
 
     var body: some View {
         Text("")
             .onAppear(perform: viewModel.on___VARIABLE_moduleIdentifier___Appear)
     }
+
+    // MARK: Child Views
+
+    /**
+     view objects unique to this view
+     */
 }
+
+// MARK: Preview
 
 struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
     static var previews: some View {
@@ -22,9 +37,8 @@ struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
 
     private static var viewModel: ___VARIABLE_moduleIdentifier___ViewModel {
         let dataSource = PreviewDataManager.preview
-        let ___VARIABLE_objectIdentifier___Id = dataSource.___VARIABLE_objectIdentifier___DataService.previewObjectId
-        return .init(
-            dataSource: dataSource,
-            ___VARIABLE_objectIdentifier___Id: ___VARIABLE_objectIdentifier___Id)
+        let dataService = dataSource.___VARIABLE_objectIdentifier___DataService
+        let ___VARIABLE_objectIdentifier___Id = dataService.previewObjectId
+        return .init(dataSource: dataSource, ___VARIABLE_objectIdentifier___Id: ___VARIABLE_objectIdentifier___Id)
     }
 }
