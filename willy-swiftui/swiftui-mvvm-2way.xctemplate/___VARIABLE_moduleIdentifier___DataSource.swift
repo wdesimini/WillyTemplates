@@ -6,9 +6,8 @@
 
 protocol ___FILEBASENAMEASIDENTIFIER___ {
     /**
-     functions to access, subscribe to, and mutate relevant data
-     - subscribe to obj w id
-     - obj CRUD operations
+     provide data service access for crud & subscriptions
+     may inherit other data source protocols
      */
 }
 

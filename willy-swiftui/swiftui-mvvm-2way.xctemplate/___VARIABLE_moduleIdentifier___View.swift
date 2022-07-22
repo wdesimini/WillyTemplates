@@ -12,10 +12,11 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
 
     @StateObject var viewModel: ___VARIABLE_moduleIdentifier___ViewModel
 
-    // MARK: Views
+    // MARK: Body
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("")
+            .onAppear(perform: viewModel.on___VARIABLE_moduleIdentifier___Appear)
     }
 
     // MARK: Child Views

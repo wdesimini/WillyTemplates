@@ -41,6 +41,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
     // MARK: Lifecycle
 
     private func bind___VARIABLE_moduleIdentifier___() {
+        // bind published objects to data state
     }
 
     // MARK: User Events
