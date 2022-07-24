@@ -32,7 +32,7 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
 
 struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
     static var previews: some View {
-        ___VARIABLE_moduleIdentifier___View(viewModel: viewModel)
+        ___FILEBASENAMEASIDENTIFIER___(viewModel: viewModel)
     }
 
     private static var viewModel: ___VARIABLE_moduleIdentifier___ViewModel {

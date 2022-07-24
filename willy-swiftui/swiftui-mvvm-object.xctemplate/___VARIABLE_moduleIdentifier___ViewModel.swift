@@ -1,6 +1,7 @@
 // ___FILEHEADER___
 
 import Combine
+import Foundation
 
 class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
@@ -23,7 +24,6 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
     ) {
         self.dataSource = dataSource
         self.___VARIABLE_objectIdentifier___Id = ___VARIABLE_objectIdentifier___Id
-        self.bind___VARIABLE_moduleIdentifier___()
     }
 
     // MARK: Computed
@@ -51,5 +51,6 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
     // MARK: User Events
 
     func on___VARIABLE_moduleIdentifier___Appear() {
+        bind___VARIABLE_moduleIdentifier___()
     }
 }
