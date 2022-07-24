@@ -2,10 +2,6 @@
 
 import Combine
 
-/**
- responsible for binding data state to view state
- */
-
 class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
     // MARK: Data
@@ -26,7 +22,6 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
     init(dataSource: ___VARIABLE_moduleIdentifier___DataSource) {
         self.dataSource = dataSource
-        self.bind___VARIABLE_moduleIdentifier___()
     }
 
     // MARK: Computed
@@ -47,5 +42,6 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
     // MARK: User Events
 
     func on___VARIABLE_moduleIdentifier___Appear() {
+        bind___VARIABLE_moduleIdentifier___()
     }
 }
