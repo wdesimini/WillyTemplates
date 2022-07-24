@@ -6,6 +6,7 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
 
     // MARK: State
 
+    @Environment(\.presentationMode) var presentationMode
     @StateObject private var viewModel: ___VARIABLE_moduleIdentifier___EntryViewModel
 
     // MARK: Initialization
@@ -30,8 +31,11 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
     // MARK: Child Views
 
     private var submitButton: some View {
-        Button("Submit", action: viewModel.submit___VARIABLE_moduleIdentifier___Tapped)
-            .disabled(!viewModel.submitIsEnabled)
+        Button("Submit") {
+            viewModel.submit___VARIABLE_moduleIdentifier___Tapped()
+            presentationMode.wrappedValue.dismiss()
+        }
+        .disabled(!viewModel.submitIsEnabled)
     }
 
     @ViewBuilder
