@@ -1,12 +1,9 @@
 // ___FILEHEADER___
 
-/**
- responsible for updating data
- */
-
 protocol ___FILEBASENAMEASIDENTIFIER___ {
     /**
-     provide data service access for updates
+     should conform to object data-source protocols essential
+     to CRUD operations of the ___VARIABLE_moduleIdentifier___ module
      */
 }
 

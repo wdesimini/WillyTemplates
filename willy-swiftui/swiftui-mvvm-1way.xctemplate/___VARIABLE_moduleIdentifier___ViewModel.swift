@@ -1,10 +1,6 @@
 // ___FILEHEADER___
 
-import Combine
-
-/**
- responsible for binding data state to view state
- */
+import Foundation
 
 class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
@@ -16,7 +12,6 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
     init(dataSource: ___VARIABLE_moduleIdentifier___DataSource) {
         self.dataSource = dataSource
-        self.bind___VARIABLE_moduleIdentifier___()
     }
 
     // MARK: Computed
@@ -30,6 +25,10 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
     // MARK: User Events
 
-    func on___VARIABLE_moduleIdentifier___Appear() {
-    }
+    /**
+     functions to receive UI event notifications and translate them into
+     data and view state updates
+     - actionTapped
+     - onAppear, onDismiss
+     */
 }
