@@ -24,7 +24,6 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
     ) {
         self.dataSource = dataSource
         self.___VARIABLE_objectIdentifier___ListId = ___VARIABLE_objectIdentifier___ListId
-        self.bind___VARIABLE_moduleIdentifier___List()
     }
 
     // MARK: Computed
@@ -72,5 +71,6 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
     // MARK: User Events
 
     func on___VARIABLE_moduleIdentifier___ListAppear() {
+        bind___VARIABLE_moduleIdentifier___List()
     }
 }

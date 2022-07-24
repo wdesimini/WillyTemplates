@@ -2,10 +2,6 @@
 
 import SwiftUI
 
-/**
- responsible for displaying view based on state
- */
-
 struct ___FILEBASENAMEASIDENTIFIER___: View {
 
     // MARK: State

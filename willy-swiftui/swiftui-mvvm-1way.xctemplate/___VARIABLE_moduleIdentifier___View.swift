@@ -2,10 +2,6 @@
 
 import SwiftUI
 
-/**
- responsible for displaying view based on state
- */
-
 struct ___FILEBASENAMEASIDENTIFIER___: View {
 
     // MARK: State
@@ -22,7 +18,6 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
 
     var body: some View {
         Text("")
-            .onAppear(perform: viewModel.on___VARIABLE_moduleIdentifier___Appear)
     }
 
     // MARK: Child Views
@@ -34,7 +29,7 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
 
 // MARK: Preview
 
-struct ___VARIABLE_moduleIdentifier___View_Previews: PreviewProvider {
+struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
     static var previews: some View {
         ___FILEBASENAMEASIDENTIFIER___(viewModel: viewModel)
     }
