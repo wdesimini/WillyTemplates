@@ -3,6 +3,9 @@
 import SwiftUI
 
 struct ___FILEBASENAMEASIDENTIFIER___: View {
+
+    // MARK: State
+
     private let viewModel: ___VARIABLE_moduleIdentifier___ListItemViewModel
 
     // MARK: Initialization
