@@ -37,12 +37,14 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
     private func bind___VARIABLE_moduleIdentifier___List() {
         let subject = PassthroughSubject<___VARIABLE_moduleIdentifier___List?, Never>()
+        subject
+            .wassign(to: \.___VARIABLE_objectIdentifier___List, on: self)
+            .store(in: &___VARIABLE_objectIdentifier___ListBag)
         weak var welf = self
         subject
-            .sink {
-                welf?.___VARIABLE_objectIdentifier___List = $0
-                welf?.bind___VARIABLE_moduleIdentifier___s()
-            }
+            .compactMap { $0?.___VARIABLE_objectIdentifier___Ids }
+            .map(Set.init)
+            .sink { welf?.bind___VARIABLE_moduleIdentifier___s(withIds: $0) }
             .store(in: &___VARIABLE_objectIdentifier___ListBag)
         dataSource.___VARIABLE_objectIdentifier___ListDataService
             .subscribe(
@@ -51,10 +53,10 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
             .store(in: &___VARIABLE_objectIdentifier___ListBag)
     }
 
-    private func bind___VARIABLE_moduleIdentifier___s() {
-        guard let ___VARIABLE_objectIdentifier___List = ___VARIABLE_objectIdentifier___List else { return }
+    private func bind___VARIABLE_moduleIdentifier___s(
+        withIds newIds: Set<___VARIABLE_moduleIdentifier___.ID>
+    ) {
         let oldIds = Set(___VARIABLE_objectIdentifier___s.map(\.id))
-        let newIds = Set(___VARIABLE_objectIdentifier___List.___VARIABLE_objectIdentifier___Ids)
         guard oldIds != newIds && !newIds.isEmpty else { return }
         ___VARIABLE_objectIdentifier___sBag.removeAll()
         let subject = PassthroughSubject<[___VARIABLE_moduleIdentifier___], Never>()
