@@ -1,9 +1,5 @@
 // ___FILEHEADER___
 
-/**
- responsible for providing & updating data
- */
-
 protocol ___FILEBASENAMEASIDENTIFIER___ {
     func submit(_ ___VARIABLE_objectIdentifier___: ___VARIABLE_moduleIdentifier___) throws
 }

@@ -1,10 +1,6 @@
 // ___FILEHEADER___
 
-import Combine
-
-/**
- responsible for binding data state to view state
- */
+import Foundation
 
 class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
@@ -14,12 +10,9 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
     // MARK: Binding
 
-    /**
-     `@Published` objects that define the view state
-     - data model object properties (internal)
-     */
-
+    private var submissionError: Error?
     @Published var ___VARIABLE_objectIdentifier___: ___VARIABLE_moduleIdentifier___
+    @Published var isPresentingSubmissionError = false
 
     // MARK: Initialization
 
@@ -33,25 +26,22 @@ class ___FILEBASENAMEASIDENTIFIER___: ObservableObject {
 
     // MARK: Computed
 
-    /**
-     `var` objects that format values to be consumed directly by the view
-     - isEnableds, isVisibles
-     */
-
     var submitIsEnabled: Bool {
-        true // replace with validity check on `entered___VARIABLE_moduleIdentifier___`
+        true // replace with validity check on `___VARIABLE_objectIdentifier___`
+    }
+
+    var submissionNSError: NSError? {
+        submissionError as NSError?
     }
 
     // MARK: User Events
-
-    func on___VARIABLE_moduleIdentifier___EntryAppear() {
-    }
 
     func submit___VARIABLE_moduleIdentifier___Tapped() {
         do {
             try dataSource.submit(___VARIABLE_objectIdentifier___)
         } catch {
-            print(error.localizedDescription)
+            submissionError = error
+            isPresentingSubmissionError = true
         }
     }
 }

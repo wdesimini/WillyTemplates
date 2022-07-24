@@ -2,10 +2,6 @@
 
 import SwiftUI
 
-/**
- responsible for displaying view based on state
- */
-
 struct ___FILEBASENAMEASIDENTIFIER___: View {
 
     // MARK: State
@@ -24,7 +20,11 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
         VStack {
             submitButton
         }
-        .onAppear(perform: viewModel.on___VARIABLE_moduleIdentifier___EntryAppear)
+        .alert(
+            isPresented: $viewModel.isPresentingSubmissionError,
+            error: viewModel.submissionNSError,
+            actions: submissionErrorActions,
+            message: submissionErrorMessage)
     }
 
     // MARK: Child Views
@@ -32,6 +32,20 @@ struct ___FILEBASENAMEASIDENTIFIER___: View {
     private var submitButton: some View {
         Button("Submit", action: viewModel.submit___VARIABLE_moduleIdentifier___Tapped)
             .disabled(!viewModel.submitIsEnabled)
+    }
+
+    @ViewBuilder
+    private func submissionErrorActions(
+        _ error: NSError
+    ) -> some View {
+        Button("Dismiss") {}
+    }
+
+    @ViewBuilder
+    private func submissionErrorMessage(
+        _ error: NSError
+    ) -> some View {
+        Text(error.localizedDescription)
     }
 }
 
