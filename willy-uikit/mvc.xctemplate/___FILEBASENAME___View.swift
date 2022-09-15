@@ -12,10 +12,10 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        add___VARIABLE_productName___Views()
+        setup___VARIABLE_productName___Views()
     }
 
-    private func add___VARIABLE_productName___Views() {
+    private func setup___VARIABLE_productName___Views() {
     }
 }
 
