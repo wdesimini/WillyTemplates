@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController, ___VARIABLE_productName___ViewInput, ___VARIABLE_productName___ControllerOutput {
     var controller: ___VARIABLE_productName___ControllerInput!
 
     override func viewDidLoad() {
@@ -17,10 +17,4 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
     private func setup___VARIABLE_productName___Views() {
     }
-}
-
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ViewInput {
-}
-
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ControllerOutput {
 }
