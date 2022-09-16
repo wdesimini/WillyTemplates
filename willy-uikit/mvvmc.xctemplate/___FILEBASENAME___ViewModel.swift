@@ -7,14 +7,12 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___ {
+class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ViewModelInput, ___VARIABLE_productName___ModelOutput {
     var coordinator: ___VARIABLE_productName___CoordinatorInput!
     var model: ___VARIABLE_productName___ModelInput!
     weak var output: ___VARIABLE_productName___ViewModelOutput!
-}
 
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ModelOutput {
-}
-
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName___ViewModelInput {
+    private func bind___VARIABLE_productName___() {
+        // bind self to outputs
+    }
 }
