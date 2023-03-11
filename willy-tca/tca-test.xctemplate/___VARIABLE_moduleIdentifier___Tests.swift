@@ -4,6 +4,7 @@ import ComposableArchitecture
 import XCTest
 @testable import ___VARIABLE_appIdentifier___
 
+@MainActor
 final class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
     private var store: TestStore<
         ___VARIABLE_moduleIdentifier___.State,
