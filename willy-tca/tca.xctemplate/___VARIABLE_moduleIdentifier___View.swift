@@ -17,7 +17,7 @@ struct ___FILEBASENAMEASIDENTIFIER____Previews: PreviewProvider {
     static var previews: some View {
         ___FILEBASENAMEASIDENTIFIER___(
             store: .init(
-                initialState: ___VARIABLE_moduleIdentifier___.State(), 
+                initialState: ___VARIABLE_moduleIdentifier___.State(),
                 reducer: ___VARIABLE_moduleIdentifier___()
             )
         )
